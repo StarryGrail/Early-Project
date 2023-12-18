@@ -6,19 +6,13 @@ public class Hotel {
      Scanner scanner = new Scanner(System.in);
 
    myMethod(scanner);
-   
-   
-   
-   
-
- 
+  
 
      scanner.close();
   }
   
        static void myMethod(Scanner scanner){
 
-      
 
       String name1 = "Asshley";
       String id2 = "2023";
@@ -73,13 +67,11 @@ public class Hotel {
 
       }
       
-
      }
 
        static void myMethod2(Scanner scanner){
 
-         
-
+        
          System.out.println("Kindly Press \"y\" if you wish to save the information and \"n\" if no ");
          String press = scanner.next();
 
@@ -96,8 +88,7 @@ public class Hotel {
           default:
             myMethod2(scanner);
          }
-
-         
+ 
      }
 
        static void myMethod3(Scanner scanner){
