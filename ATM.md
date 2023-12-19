@@ -1,3 +1,0 @@
-# Automated Teller Machine System
-
- 
