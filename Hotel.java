@@ -250,6 +250,7 @@ public class Hotel {
 
 
           System.out.println("Thank you for choosing SioGo Hotel. Have a nice Stay!");
+          System.out.println("Have a Nice day!");
           
          
           
