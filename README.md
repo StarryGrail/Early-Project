@@ -1,5 +1,5 @@
-# Hotel Reservation System
+# Early Projects in College
 
- This is my Hotel Reservation System with Recursion
+ This is my Hotel Reservation System with Recursion Method
   
-  ## Hotel Reservation with Different methods calling itself
+
