@@ -59,7 +59,7 @@ public class Hotel {
 
         case "A":
           System.out.println("Customer Reservation");
-          myMethod4(scanner);
+          myMethod2(scanner);
           break;
 
         default:
@@ -69,54 +69,7 @@ public class Hotel {
       
      }
 
-       static void myMethod2(Scanner scanner){
-
-        
-         System.out.println("Kindly Press \"y\" if you wish to save the information and \"n\" if no ");
-         String press = scanner.next();
-
-         switch(press){
-
-          case "y":
-           System.out.println("Room Type Single Deluxe");
-           break;
-
-          case "n":
-           System.out.println("End of Transaction");
-           break;
-
-          default:
-            myMethod2(scanner);
-         }
- 
-     }
-
-       static void myMethod3(Scanner scanner){
-
-        
-
-         System.out.println("Kindly Press \"y\" if you wish to save the information and \"n\" if no ");
-         String press = scanner.next();
-
-         switch(press){
-
-          case "y":
-           System.out.println("Room Type: VIP Room");
-           break;
-
-          case "n":
-           System.out.println("End of Transaction");
-           break;
-
-          default:
-            myMethod3(scanner);
-         }
-
-    
-
-     }
-
-      static void myMethod4(Scanner scanner){
+      static void myMethod2(Scanner scanner){
 
       System.out.println("1. Single Deluxed");
       System.out.println("2. VIP Room");
@@ -128,16 +81,16 @@ public class Hotel {
       switch(room){
 
         case "1":
-          myMethod5(scanner);
+          myMethod3(scanner);
           break;
 
         case "2":
           
-          myMethod6(scanner);
+          myMethod4(scanner);
           break;
 
         default:
-        myMethod4(scanner);
+        myMethod2(scanner);
 
          
       }
@@ -145,7 +98,7 @@ public class Hotel {
       
      }
 
-        static void myMethod5(Scanner scanner){
+        static void myMethod3(Scanner scanner){
         
           System.out.println("Customer's Full Name");
           String Fname = scanner.nextLine();
@@ -169,7 +122,7 @@ public class Hotel {
 
           System.out.println("Kindly Check the Information Below if it is correct.");
          
-          System.out.println("First Name:                             " + Fname.substring(0,18));
+          System.out.println("First Name:                             " + Fname.substring(0, 18));
           System.out.println("Middle Initial:                         " + Fname.substring(19,20));
           System.out.println("Last Name:                              " + Fname.substring(21));
           System.out.println("Address:                                " + address);
@@ -178,9 +131,21 @@ public class Hotel {
           System.out.println("Marital Status:                         " + Mstatus);
           System.out.println("Total Number of Pax:                    " + pax);
 
-          myMethod2(scanner);
+          
 
-          double Sprice = 500.0;
+         String press;
+
+         do{
+            System.out.println("Kindly Press \"y\" if you wish to save the information and \"n\" if no ");
+         press = scanner.next();
+         }while( !press.equals("y") && !press.equals("n"));
+
+          
+         switch(press){
+
+          case "y":
+          
+           double Sprice = 500.0;
           double pay = Sprice * pax;
 
           
@@ -195,10 +160,19 @@ public class Hotel {
           System.out.println("Change: ");
 
           System.out.println("Thank you for choosing SioGo Hotel. Have a nice Stay!");
+           break;
+
+          case "n":
+           System.out.println("End of Transaction");
+           break;
+
+          
+          
+         }
 
      }
 
-        static void myMethod6(Scanner scanner){
+        static void myMethod4(Scanner scanner){
 
       System.out.println("Customer's Full Name");
           String fname = scanner.nextLine();
@@ -231,8 +205,17 @@ public class Hotel {
           System.out.println("Marital Status:                         " + Mastatus);
           System.out.println("Total Number of Pax:                  " + paxx);
 
-          myMethod3(scanner);
-          
+           
+           String press;
+
+         do{
+            System.out.println("Kindly Press \"y\" if you wish to save the information and \"n\" if no ");
+         press = scanner.next();
+         }while( !press.equals("y") && !press.equals("n"));
+
+         switch(press){
+
+          case "y":
           double Vprice = 5000.0;
           double payy = Vprice * paxx;
  
@@ -251,6 +234,15 @@ public class Hotel {
 
           System.out.println("Thank you for choosing SioGo Hotel. Have a nice Stay!");
           System.out.println("Have a Nice day!");
+          break;
+
+          case "n":
+            System.out.println("End of Transaction");
+            break;
+
+         }
+          
+          
           
          
           
